@@ -198,11 +198,6 @@ This repository is provided **strictly for educational and authorized defensive-
 
 ---
 
-## 👤 Author
-
-**Akshit** — RF / Wireless & Offensive-Security enthusiast.
-Project focus: SDR, signal analysis, and the security of wireless/embedded systems.
-
 > ⭐ If this helped you understand drone RF security, consider starring the repo.
 
 ---
