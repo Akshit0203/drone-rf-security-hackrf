@@ -1,0 +1,27 @@
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+.obsidian/
+
+# ---- Raw / oversized capture media (keep repo lean) ----
+# GitHub rejects files > 100 MB without Git LFS. Keep raw, uncompressed
+# captures and large source footage out of the repo; only the compressed
+# evidence in media/ is tracked.
+*.cfile
+*.iq
+*.sub
+raw/
+captures/
+
+# Large raw source footage (committed demo lives in media/video/)
+*_raw.mp4
+20250629_*.mp4
+
+# ---- Scratch ----
+tmp/
+scratch/
