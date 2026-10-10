@@ -54,6 +54,34 @@ The goal is to **demonstrate why robust link-layer security (FHSS + AES, mutual 
 
 ---
 
+## 🎬 Demonstration
+
+**Inline demo clip** *(short, high-level walkthrough):*
+
+<video src="https://github.com/user-attachments/assets/cf5597a7-c546-4113-8a1c-1920bdbd9c0f" width="100%" controls></video>
+<br>
+
+**Full demonstration video** *(longer capture, committed to the repo):*
+👉 **[`media/video/demo.mp4`](media/video/demo.mp4)** — download or view the complete interception → replay → jamming walkthrough.
+
+---
+
+## 📸 Captured Evidence
+
+<div align="center">
+
+### Full test rig — SDR + controller + target UAV
+<img src="media/images/01-setup-overview.jpg" alt="HackRF One + PortaPack H2+ beside the drone controller and quadcopter" width="720">
+
+### Looking Glass — 2.4 GHz waterfall during controller activity
+<img src="media/images/03-signal-bursts-highlighted.jpg" alt="Control-signal bursts highlighted in the PortaPack Looking Glass waterfall" width="360">
+
+<sub>Looking Glass sweep of the 2.3–2.56 GHz window, with the control-signal bursts (triggered by controller input) highlighted in red.</sub>
+
+</div>
+
+---
+
 ## 🛠 Hardware & Software Stack
 
 | Component | Role |
@@ -94,33 +122,6 @@ Re-transmitted the previously captured control bursts with the HackRF. The drone
 
 ### 4. Jamming (CW interference)
 Emitted continuous-wave interference over the same control band. The link degraded, the drone lost reliable command and **entered instability / forced-landing (failsafe)** behaviour. → [docs/04-jamming.md](docs/04-jamming.md)
-
----
-
-## 🎬 Demonstration
-
-**Inline demo clip** *(short, high-level walkthrough):*
-
-
-
-**Full demonstration video** *(longer capture, committed to the repo):*
-👉 **[`media/video/demo.mp4`](media/video/demo.mp4)** — download or view the complete interception → replay → jamming walkthrough.
-
----
-
-## 📸 Captured Evidence
-
-<div align="center">
-
-### Full test rig — SDR + controller + target UAV
-<img src="media/images/01-setup-overview.jpg" alt="HackRF One + PortaPack H2+ beside the drone controller and quadcopter" width="720">
-
-### Looking Glass — 2.4 GHz waterfall during controller activity
-<img src="media/images/03-signal-bursts-highlighted.jpg" alt="Control-signal bursts highlighted in the PortaPack Looking Glass waterfall" width="360">
-
-<sub>Looking Glass sweep of the 2.3–2.56 GHz window, with the control-signal bursts (triggered by controller input) highlighted in red.</sub>
-
-</div>
 
 ---
 
